@@ -100,7 +100,7 @@ class Settings extends Model
      */
     public function getListId($siteHandle=null): string
     {
-      return App::env('CM_LIST_ID_'.$siteHandle)
+      return App::env('CM_LIST_ID_'.$siteHandle);
     }
 }
 
