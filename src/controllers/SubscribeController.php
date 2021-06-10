@@ -6,17 +6,12 @@
 
 namespace pixelmachine\gpxcm\controllers;
 
-use pixelmachine\gpxcm\CmLists;
+use pixelmachine\gpxcm\GPxCM;
 
 use Craft;
 use craft\web\Controller;
 
-/**
- * View and manage your Campaign Monitor subscriber lists in your Craft CMS control panel.
- *
- * @author Mark Reeves, Clearbold, LLC <hello@clearbold.com>
- * @since 1.0.2
- */
+
 class SubscribeController extends Controller
 {
 
@@ -71,7 +66,7 @@ class SubscribeController extends Controller
         //     $response = CmLists::getInstance()->campaignmonitor->addSubscriber($listId, $subscriber);
         // }
 
-        $response = CmLists::getInstance()->cmListService->subscribe($listId, $email, $fullName, $additionalFields);
+        $response = GPxCM::getInstance()->cmListService->subscribe($listId, $email, $fullName, $additionalFields);
 
         return $request->getBodyParam('redirect') ? $this->redirectToPostedUrl() : $this->asJson($response);
     }

@@ -11,6 +11,7 @@ use pixelmachine\gpxcm\GPxCM;
 use Craft;
 use craft\base\Model;
 use craft\behaviors\EnvAttributeParserBehavior;
+use craft\helpers\App
 
 /**
  * @author    Mark Reeves, Clearbold, LLC <hello@clearbold.com>
@@ -69,8 +70,7 @@ class Settings extends Model
      */
     public function getStatus(): string
     {
-    	$siteSettings = Craft::$app->globals->getSetByHandle('campaignMonitor')->fieldValues['campaignMonitorApi'][0];
-        return $siteSettings['enable'];
+      return App::env('CM_STATUS');
     }
 
     /**
@@ -80,8 +80,7 @@ class Settings extends Model
      */
     public function getApiKey(): string
     {
-    	$siteSettings = Craft::$app->globals->getSetByHandle('campaignMonitor')->fieldValues['campaignMonitorApi'][0];
-        return $siteSettings['apiKey'];
+      return App::env('CM_API_KEY');
     }
 
     /**
@@ -91,8 +90,7 @@ class Settings extends Model
      */
     public function getClientId(): string
     {
-    	$siteSettings = Craft::$app->globals->getSetByHandle('campaignMonitor')->fieldValues['campaignMonitorApi'][0];
-        return $siteSettings['clientId'];
+      return App::env('CM_CLIENT_ID');
     }
 
     /**
@@ -100,8 +98,9 @@ class Settings extends Model
      *
      * @return string
      */
-    public function getListId(): string
+    public function getListId($siteHandle=null): string
     {
-    	return Craft::$app->globals->getSetByHandle('campaignMonitor')->fieldValues['campaignMonitorListId'];
+      return App::env('CM_LIST_ID_'.$siteHandle)
     }
 }
+
