@@ -6,7 +6,7 @@
 
 namespace pixelmachine\gpxcm\services;
 
-use pixelmachine\gpxcm\CmLists;
+use pixelmachine\gpxcm\GPxCM;
 use pixelmachine\gpxcm\events\SubscribeEvent;
 
 use Craft;
@@ -37,7 +37,7 @@ class ListService extends Component
         );
 
         if ($email !== null) {
-            $response = CmLists::getInstance()->campaignmonitor->addSubscriber($listId, $subscriber);
+            $response = GPxCM::getInstance()->campaignmonitor->addSubscriber($listId, $subscriber);
         }
 
         $eventName = self::EVENT_SUBSCRIBER_ADDED;
