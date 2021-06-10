@@ -1,3 +1,12 @@
+## 1.0.13 - 2021-06-10
+
+* Updated Class
+
+## 1.0.12 - 2021-06-10
+
+* Updated namespace
+* Change plugin links
+
 ## 1.0.11 - 2020-01-14
 
 * Updated Craft version

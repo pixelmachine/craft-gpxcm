@@ -39,7 +39,7 @@ class GPxCM extends Plugin
 
         Craft::info(
             Craft::t(
-                'gpx-cm',
+                'gpxcm',
                 '{name} plugin loaded',
                 ['name' => $this->name]
             ),
