@@ -4,9 +4,9 @@
  * @copyright Copyright (c) 2019 Jamie Grisdale
  */
 
-namespace gp\gpxcm\models;
+namespace pixelmachine\gpxcm\models;
 
-use gp\gpxcm\GPxCM;
+use pixelmachine\gpxcm\GPxCM;
 
 use Craft;
 use craft\base\Model;

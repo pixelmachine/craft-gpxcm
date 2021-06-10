@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2019 Jamie Grisdale
  */
 
-namespace gp\gpxcm\events;
+namespace pixelmachine\gpxcm\events;
 
 use yii\base\Event;
 

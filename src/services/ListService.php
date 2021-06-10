@@ -4,10 +4,10 @@
  * @copyright Copyright (c) 2019 Jamie Grisdale
  */
 
-namespace gp\gpxcm\services;
+namespace pixelmachine\gpxcm\services;
 
-use gp\gpxcm\CmLists;
-use gp\gpxcm\events\SubscribeEvent;
+use pixelmachine\gpxcm\CmLists;
+use pixelmachine\gpxcm\events\SubscribeEvent;
 
 use Craft;
 use craft\base\Component;

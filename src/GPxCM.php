@@ -4,10 +4,10 @@
  * @copyright Copyright (c) 2019 Jamie Grisdale
  */
 
-namespace gp\gpxcm;
+namespace pixelmachine\gpxcm;
 
-use gp\gpxcm\services\CampaignMonitorService;
-use gp\gpxcm\models\Settings;
+use pixelmachine\gpxcm\services\CampaignMonitorService;
+use pixelmachine\gpxcm\models\Settings;
 
 
 use Craft;
@@ -33,8 +33,8 @@ class GPxCM extends Plugin
         self::$plugin = $this;
 
         $this->setComponents([
-            'campaignmonitor' => \gp\gpxcm\services\CampaignMonitorService::class,
-            'cmListService' =>  \gp\gpxcm\services\ListService::class
+            'campaignmonitor' => \pixelmachine\gpxcm\services\CampaignMonitorService::class,
+            'cmListService' =>  \pixelmachine\gpxcm\services\ListService::class
         ]);
 
         Craft::info(
@@ -48,6 +48,6 @@ class GPxCM extends Plugin
     }
     protected function createSettingsModel()
     {
-        return new \gp\gpxcm\models\Settings();
+        return new \pixelmachine\gpxcm\models\Settings();
     }
 }

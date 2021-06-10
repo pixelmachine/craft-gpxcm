@@ -4,14 +4,14 @@
  * @copyright Copyright (c) 2019 Jamie Grisdale
  */
 
-namespace gp\gpxcm\services;
+namespace pixelmachine\gpxcm\services;
 
 require_once CRAFT_VENDOR_PATH.'/campaignmonitor/createsend-php/csrest_clients.php';
 require_once CRAFT_VENDOR_PATH.'/campaignmonitor/createsend-php/csrest_lists.php';
 require_once CRAFT_VENDOR_PATH.'/campaignmonitor/createsend-php/csrest_subscribers.php';
 require_once CRAFT_VENDOR_PATH.'/campaignmonitor/createsend-php/csrest_campaigns.php';
 
-use gp\gpxcm\GPxCM;
+use pixelmachine\gpxcm\GPxCM;
 
 use Craft;
 use craft\base\Component;

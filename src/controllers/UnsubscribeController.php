@@ -4,9 +4,9 @@
  * @copyright Copyright (c) 2019 Jamie Grisdale
  */
 
-namespace gp\gpxcm\controllers;
+namespace pixelmachine\gpxcm\controllers;
 
-use gp\gpxcm\CmLists;
+use pixelmachine\gpxcm\CmLists;
 
 use Craft;
 use craft\web\Controller;
