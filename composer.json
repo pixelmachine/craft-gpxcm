@@ -2,7 +2,7 @@
     "name": "pixelmachine/craft-gpxcm",
     "description": "Campaign Monitor Service is an API wrapper and settings manager for Campaign Monitor plugins for Craft.",
     "type": "craft-plugin",
-    "version": "1.0.11",
+    "version": "1.0.12",
     "keywords": [
         "craft",
         "cms",
@@ -12,8 +12,8 @@
         "campaign monitor"
     ],
     "support": {
-        "docs": "???",
-        "issues": "???"
+        "docs": "https://github.com/pixelmachine/gpxcm",
+        "issues": "https://github.com/pixelmachine/gpxcm"
     },
     "license": "MIT",
     "authors": [
@@ -36,7 +36,7 @@
         "handle": "gpxcm",
         "hasCpSettings": false,
         "hasCpSection": false,
-        "changelogUrl": "???",
+        "changelogUrl": "https://github.com/pixelmachine/gpxcm/blob/master/CHANGELOG.md",
         "class": "pixelmachine\\gpxcm\\GPxCM"
     }
 }
