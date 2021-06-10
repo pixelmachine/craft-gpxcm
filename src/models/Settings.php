@@ -11,7 +11,7 @@ use pixelmachine\gpxcm\GPxCM;
 use Craft;
 use craft\base\Model;
 use craft\behaviors\EnvAttributeParserBehavior;
-use craft\helpers\App
+use craft\helpers\App;
 
 /**
  * @author    Mark Reeves, Clearbold, LLC <hello@clearbold.com>

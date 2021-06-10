@@ -1,3 +1,7 @@
+## 1.0.16 - 2021-06-10
+
+* Missing ;
+
 ## 1.0.15 - 2021-06-10
 
 * Fix incorect includes
