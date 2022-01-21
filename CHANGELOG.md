@@ -1,3 +1,7 @@
+## 1.0.21 - 2021-11-30
+
+* Add consent to track
+
 ## 1.0.20 - 2021-11-30
 
 * Update CM
