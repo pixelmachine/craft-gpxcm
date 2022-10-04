@@ -21,7 +21,7 @@ use craft\base\Plugin;
  */
 class GPxCM extends Plugin
 {
-    public $hasCpSettings = false;
+    public bool $hasCpSettings = false;
     public static $plugin;
 
     // Public Methods
@@ -46,7 +46,7 @@ class GPxCM extends Plugin
             __METHOD__
         );
     }
-    protected function createSettingsModel()
+    protected function createSettingsModel(): ?\craft\base\Model
     {
         return new \pixelmachine\gpxcm\models\Settings();
     }

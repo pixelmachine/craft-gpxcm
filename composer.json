@@ -23,7 +23,6 @@
         }
     ],
     "require": {
-        "craftcms/cms": "^3.4.0-RC1",
         "campaignmonitor/createsend-php": "^6.1.2"
     },
     "autoload": {
