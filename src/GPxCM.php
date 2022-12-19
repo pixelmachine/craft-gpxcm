@@ -21,7 +21,7 @@ use craft\base\Plugin;
  */
 class GPxCM extends Plugin
 {
-    public $hasCpSettings = false;
+    // public $hasCpSettings = false;
     public static $plugin;
 
     // Public Methods
