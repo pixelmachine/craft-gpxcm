@@ -18,7 +18,7 @@ class SubscribeController extends Controller
     // Protected Properties
     // =========================================================================
 
-    protected array|int|bool $allowAnonymous = ['index'];
+    protected $allowAnonymous = ['index'];
 
     /**
      * @returns redirect or JSON
