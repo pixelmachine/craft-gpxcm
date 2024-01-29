@@ -7,6 +7,7 @@
 namespace pixelmachine\gpxcm\controllers;
 
 use pixelmachine\gpxcm\GPxCM;
+use craft\web\Response;
 
 use Craft;
 use craft\web\Controller;
@@ -18,12 +19,12 @@ class UnsubscribeController extends Controller
     // Protected Properties
     // =========================================================================
 
-    protected $allowAnonymous = ['index'];
+    protected array|int|bool $allowAnonymous = ['index'];
 
     /**
      * @returns redirect or JSON
      */
-    public function actionIndex()
+    public function actionIndex(): string|Response
     {
         $this->requirePostRequest();
         $request = Craft::$app->getRequest();

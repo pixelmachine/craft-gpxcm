@@ -8,10 +8,11 @@ namespace pixelmachine\gpxcm;
 
 use pixelmachine\gpxcm\services\CampaignMonitorService;
 use pixelmachine\gpxcm\models\Settings;
-
+use pixelmachine\gpxcm\services\ListService;
 
 use Craft;
 use craft\base\Plugin;
+use craft\base\Model;
 
 /**
  * Campaign Monitor Service is an API wrapper and settings manager for Campaign Monitor plugins for Craft.
@@ -33,8 +34,8 @@ class GPxCM extends Plugin
         self::$plugin = $this;
 
         $this->setComponents([
-            'campaignmonitor' => \pixelmachine\gpxcm\services\CampaignMonitorService::class,
-            'cmListService' =>  \pixelmachine\gpxcm\services\ListService::class
+            'campaignmonitor' => CampaignMonitorService::class,
+            'cmListService' =>  ListService::class
         ]);
 
         Craft::info(
@@ -46,8 +47,8 @@ class GPxCM extends Plugin
             __METHOD__
         );
     }
-    protected function createSettingsModel(): ?\craft\base\Model
+    protected function createSettingsModel(): ?Model
     {
-        return new \pixelmachine\gpxcm\models\Settings();
+        return new Settings();
     }
 }

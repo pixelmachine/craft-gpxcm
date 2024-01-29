@@ -1,3 +1,7 @@
+## 2.0.0 - 2024-01-29
+
+* Craft 4 compatability
+
 ## 1.0.21 - 2021-11-30
 
 * Add consent to track

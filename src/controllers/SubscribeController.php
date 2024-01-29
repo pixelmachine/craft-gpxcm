@@ -10,6 +10,7 @@ use pixelmachine\gpxcm\GPxCM;
 
 use Craft;
 use craft\web\Controller;
+use craft\web\Response;
 
 
 class SubscribeController extends Controller
@@ -18,12 +19,12 @@ class SubscribeController extends Controller
     // Protected Properties
     // =========================================================================
 
-    protected $allowAnonymous = ['index'];
+    protected array|int|bool $allowAnonymous = ['index'];
 
     /**
      * @returns redirect or JSON
      */
-    public function actionIndex()
+    public function actionIndex(): string|Response
     {
         $this->requirePostRequest();
         $request = Craft::$app->getRequest();
